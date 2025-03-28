@@ -99,6 +99,20 @@ tr{
     text-align: right;
 }
 
+@media screen and (max-width:1000px){
+    .subject{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .container{
+        padding: 20px;
+    }
+    .college p{
+        font-size: 20px;
+    }
+}
 
 @media print {
     .container{
