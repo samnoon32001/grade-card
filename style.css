@@ -113,7 +113,26 @@ tr{
         font-size: 20px;
     }
 }
-
+@media screen and (max-width:500px) {
+    .address,.heading,.table,.details,.remark{
+        font-size: 10px;
+    }
+    .college p{
+        font-size: 15px;
+    }
+    .details,.remark{
+        line-height: 15px;
+    }
+    .print button{
+        width: 50px;
+        height: 15px;
+        font-size: 10px;
+    }
+    .paper{
+        width: 25%;
+    }
+    
+}
 @media print {
     .container{
         padding: 0px;
