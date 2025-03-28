@@ -146,6 +146,9 @@ tr{
     .print{
         display: none;
     }
+    @page {
+        size: A4 portrait; /* or A4 landscape */
+    }
     * {
         -webkit-print-color-adjust: exact !important; /* For WebKit browsers */
         print-color-adjust: exact !important; /* Standard property */
