@@ -1,0 +1,120 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo,.college,.address,.heading,.table,.print{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px 0px;
+}
+.container{
+    padding: 40px 100px;
+}
+.logo{
+    height: 100px;
+}
+.logo-img{
+    width: 150px;
+    height: 100px;
+}
+.college p{
+    color: #103f73;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+.address p{
+    color: rgb(32, 30, 30);
+}
+.heading{
+    background-color: #099e64;
+    color: white;
+    font-size: 20px;
+}
+
+.print button{
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #d1d6dc;
+    border: 1px solid #575858;
+    border-radius:10px;
+}
+.table table,tr,td,thead,th{
+    border: 1px solid #575858;
+    border-collapse: collapse;
+    padding-left: 3px;
+}
+
+.table{
+    width: 100%;
+}
+
+th{
+    background-color: #d1d6dc;
+    height: 30px;
+    text-align: start;
+}
+tr{
+    height: 30px;
+}
+.table table{
+    width: 100%;
+}
+.si{
+    width: 10%;
+}
+.subject{
+    width: 65%;
+    text-align: start;
+}
+.paper{
+    width: 15%;
+}
+.status{
+    width: 10%;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.details .right,.left{
+    width: 50%;
+}
+.details,.remark {
+    border-top: 2px dotted black;
+    padding-top: 20px;
+    line-height: 20px;
+}
+.controller{
+    text-align: right;
+}
+
+
+@media print {
+    .container{
+        padding: 0px;
+    }
+    .subject{
+        width: 50%;
+    }
+    .paper{
+        width: 15%;
+    }
+    .print{
+        display: none;
+    }
+    * {
+        -webkit-print-color-adjust: exact !important; /* For WebKit browsers */
+        print-color-adjust: exact !important; /* Standard property */
+    }
+};
